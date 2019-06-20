@@ -1,0 +1,7 @@
+string_input=input("Enter the string")
+l=[]
+for i in string_input:
+  if i not in l:
+    l.append(i)
+print("Maximium no of distint character : ")
+print(len(l))
