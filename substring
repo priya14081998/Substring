@@ -1,7 +1,15 @@
-string_input=input("Enter the string")
-l=[]
-for i in string_input:
-  if i not in l:
-    l.append(i)
-print("Maximium no of distint character : ")
-print(len(l))
+n=input()
+s=list(set(n))
+c=0
+for i in n:
+    if i in s:
+        c+=1
+        s.remove(i)
+    else:
+        c+=1
+        continue
+    if(len(s)!=0):
+        continue
+    else:
+        break
+print(c)
